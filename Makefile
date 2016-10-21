@@ -5,3 +5,6 @@ build:
 
 run:
 	docker run -it --rm -p 8080:8080 include/hello
+
+clean:
+	docker rmi $(shell docker images include/hello -aq)
