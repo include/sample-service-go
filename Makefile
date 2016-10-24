@@ -1,4 +1,7 @@
-all: build
+all: prebuild build
+
+prebuild:
+	echo "..."
 
 build:
 	docker build -t include/sample-service-go .
