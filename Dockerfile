@@ -3,7 +3,7 @@ FROM golang:onbuild
 RUN mkdir -p /go/src/app
 WORKDIR /go/src/app
 
-EXPOSE 8081
+EXPOSE 8080
 
 CMD ["go-wrapper", "run"]
 

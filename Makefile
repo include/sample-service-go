@@ -8,7 +8,7 @@ build:
 	docker build -t include/sample-service-go:$(VERSION) .
 
 run:
-	docker run -it --rm -p 8081:8081 include/sample-service-go
+	docker run -it --rm -p 8080:8080 include/sample-service-go
 
 test:
 	echo "ok"

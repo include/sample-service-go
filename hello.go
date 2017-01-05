@@ -14,5 +14,5 @@ func handler(w http.ResponseWriter, r *http.Request) {
 func main() {
     log.Println("Started simple web server.")
     http.HandleFunc("/", handler)
-    http.ListenAndServe(":8081", nil)
+    http.ListenAndServe(":8080", nil)
 }
